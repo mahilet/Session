@@ -17,7 +17,7 @@ if (isset($passphrase)){//check if form element id 'passphrase' is set
         $_SESSION['login']=true;
 
         echo "Access granted!";
-     
+
         //continue loading page
     }else if ($_SESSION['login']===true){//if passphrase is correct and session is started show page
 
@@ -46,7 +46,7 @@ if (isset($passphrase)){//check if form element id 'passphrase' is set
     }
 }else  if((!isset($passphrase)) && (!isset($_SESSION['login']))){//if passphrase is not set show form
 
-
+echo '<p>The passphrase is [letmein]</p>';
   echo '<form action="' . THIS_PAGE . '" method="post" id="form">
         <fieldset>
 
